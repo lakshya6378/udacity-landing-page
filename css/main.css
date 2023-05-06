@@ -20,6 +20,13 @@ html{
 }
 header{
     background-color: #262626;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 9999;
+   
+     /* Ensures the navbar is always on top */
 }
 li{
     list-style: none;
@@ -61,9 +68,11 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+
+
 #introduction{
     display: flex;
-    padding:2%;
+    padding:80px 2%  2% 2%;
     justify-content: space-around;
     background-image: url(/landing-page/images/background2.jpg);
     background-size: cover;  
@@ -209,6 +218,13 @@ height:3px;
     animation-delay: 7s;
   
 }
+.active1{
+    display: block;
+    padding:7px;
+    background-color: rgb(218, 218, 32);
+    border-radius: 20px;
+
+}
 
 @keyframes bubble-up{
     0%{ 
@@ -270,7 +286,67 @@ height:3px;
     width: 60px; 
 }
 
+#about{
+    margin: 2%;
+}
+#about h1{
+    text-align: center;
+    color: white;
+}
 
+.profile{
+    display: flex;
+    justify-content: space-between;
+    gap:2%;
+    
+}
+.profile-image img{
+    width:90px;
+    height:90px;
+    border-radius: 20px; 
+    border:2px solid rgb(48, 218, 32); 
+}
+
+.my-info p{
+    text-align: left;
+
+}
+.my-info h2{
+    color: gold;
+}
+
+.credits h2{
+    color: aqua;
+    text-align: center;
+    margin: 2%;
+}
+
+.credits a{
+    color: green;
+}
+#contact{
+    margin:2%;
+    min-height: 200px;
+}
+
+
+#contact h1{
+    color: white;
+    text-align: center;
+    margin:2%;
+}
+
+#contact ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:2%;
+    margin: 2%;
+}
+
+#contact ul li img{
+    height:70px;
+}
 
 
 @media(max-width:768px){
@@ -330,7 +406,10 @@ height:3px;
     #innovation ul li{
         width:46%;
     }
+   
 }
+
+
 @media(max-width:600px)
 {
     #introduction{
@@ -355,6 +434,15 @@ height:3px;
         width:80%;
         margin: auto;
         margin-bottom: 15px;
+    }
+    .profile{
+        display: block;
+    }
+    .profile-image{
+        text-align: center;
+    }
+    .my-info h2{
+        text-align: center;
     }
 }
 
