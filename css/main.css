@@ -445,4 +445,16 @@ height:3px;
         text-align: center;
     }
 }
+@media(max-width:400px)
+{
+    .resource-items{
+        width: 80%;
+        margin: auto;
+    }
+
+    .remove1,
+    .remove2{
+        display: none;
+    }
+}
 
